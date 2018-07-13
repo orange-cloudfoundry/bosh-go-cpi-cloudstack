@@ -1,0 +1,3 @@
+[submodule "src/bosh-cpi-cloudstack"]
+	path = src/bosh-cpi-cloudstack
+	url = https://github.com/orange-cloudfoundry/bosh-cpi-cloudstack.git

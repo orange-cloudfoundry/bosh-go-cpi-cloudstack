@@ -1,0 +1,106 @@
+---
+name: cloudstack_cpi
+
+packages:
+  - cloudstack_cpi
+
+templates:
+  bin/ctl: bin/ctl
+  bin/monit_debugger: bin/monit_debugger
+  config/config.json.erb: config/config.yml
+  helpers/ctl_setup.sh: helpers/ctl_setup.sh
+  helpers/ctl_utils.sh: helpers/ctl_utils.sh
+
+properties:
+  cloudstack.endpoint:
+      description: "CloudStack's manager endpoint"
+      default: "https://your-domain/client/api"
+  cloudstack.api_key:
+      description: "CloudStack account api-key"
+  cloudstack.secret_access_key:
+      description: "CloudStack account secret access-key"
+  cloudstack.default_zone:
+      description: "Default Zone"
+      default: "Zone1"
+  cloudstack.skip_verify_ssl:
+      description: "Set true to skip SSL verification"
+      default: false
+
+  cloudstack.timeout.global:
+      description: "Default CPI timeout for all actions (seconds)"
+      default: 1800
+  cloudstack.timeout.reboot_vm:
+      description: "CPI timeout for virtual machine reboot (seconds)"
+      default: 1800
+  cloudstack.timeout.create_vm:
+      description: "CPI timeout for virtual machine creation (seconds)"
+      default: 1800
+  cloudstack.timeout.delete_vm:
+      description: "CPI timeout for virtual machine deletion (seconds)"
+      default: 1800
+  cloudstack.timeout.create_volume:
+      description: "CPI timeout for volume creation (seconds)"
+      default: 1800
+  cloudstack.timeout.delete_volume:
+      description: "CPI timeout for volume deleting (seconds)"
+      default: 1800
+  cloudstack.timeout.resize_volume:
+      description: "CPI timeout for volume resizing (seconds)"
+      default: 1800
+  cloudstack.timeout.poll_template:
+      description: "CPI timeout used when waitting for cloudstack to install uploaded stemcell (seconds)"
+      default: 1800
+
+  cloudstack.default_key_name:
+      description: ""
+      default: ""
+  cloudstack.private_key:
+      description: ""
+      default: ""
+
+  cloudstack.default_offer.disk:
+      description: "Default disk offering"
+      default: ""
+  cloudstack.default_offer.ephemeral_disk:
+      description: "Default ephemeral disk offering"
+      default: ""
+  cloudstack.default_offer.custom_disk:
+      description: "Default custom disk offering"
+      default: "shared.custom"
+
+  cloudstack.stemcell.public_visibility:
+      description: "Set true to mark created templates as public"
+      default: true
+  cloudstack.stemcell.requires_hvm:
+      description: "Set to true if cloudstack templates require hvm"
+      default: true
+  cloudstack.stemcell.os_type:
+      description: "Use given OS type registered in Cloudstack"
+      default: "Other PV (64-bit)"
+
+  action.agent.mbus:
+      description: ""
+      default: ""
+  action.agent.ntp:
+      description: ""
+  action.agent.env_service:
+      description: ""
+      default: ""
+  action.agent.blobstore.provider:
+      description: ""
+      default: ""
+  action.agent.blobstore.options:
+      description: ""
+
+  action.registry.host:
+      description: "Hostname of registry"
+      default: ""
+  action.registry.port:
+      description: "Port of registry"
+      default: 6901
+  action.registry.username:
+      description: "Username for registry"
+      default: ""
+  action.registry.password:
+      description: "Password for registry"
+      default: ""
