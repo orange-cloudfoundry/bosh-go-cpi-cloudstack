@@ -26,7 +26,7 @@ export PATH
 
 cmd="$BOSH_PACKAGES_DIR/cloudstack_cpi/bin/cloudstack_cpi -configPath $BOSH_JOBS_DIR/cloudstack_cpi/config/config.json"
 if [ -d /var/vcap/sys/log ]; then
-exec $cmd 2>>/var/vcap/sys/log/cloudstack_cpi/cpi.stderr.log <&0
+  exec $cmd 2>>/var/vcap/sys/log/cloudstack_cpi/cpi.stderr.log <&0
 else
-exec $cmd <&0
+  exec $cmd <&0
 fi

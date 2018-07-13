@@ -7,6 +7,7 @@ JSON.dump(
     "SecretAccessKey" => p("cloudstack.secret_access_key"),
     "SkipVerifySSL"   => p("cloudstack.skip_verify_ssl"),
     "DefaultZone"     => p("cloudstack.default_zone"),
+    "ExpungeVm"       => p("cloudstack.expunge_vm"),
     "DefaultOffer"    => {
        "Disk"            => p("cloudstack.default_offer.disk"),
        "EphemeralDisk"   => p("cloudstack.default_offer.ephemeral_disk"),
@@ -18,15 +19,25 @@ JSON.dump(
       "OsType"           => p("cloudstack.stemcell.os_type"),
     },
     "Timeout"   => {
-      "Global"       => p("cloudstack.timeout.global"),
-      "RebootVm"     => p("cloudstack.timeout.reboot_vm"),
-      "CreateVm"     => p("cloudstack.timeout.create_vm"),
-      "DeleteVm"     => p("cloudstack.timeout.delete_vm"),
-      "StopVm"       => p("cloudstack.timeout.stop_vm"),
-      "CreateVolume" => p("cloudstack.timeout.create_volume"),
-      "DeleteVolume" => p("cloudstack.timeout.delete_volume"),
-      "ResizeVolume" => p("cloudstack.timeout.resize_volume"),
-      "PollTemplate" => p("cloudstack.timeout.poll_template"),
+      "Global"               => p("cloudstack.timeout.global"),
+      "RebootVm"             => p("cloudstack.timeout.reboot_vm"),
+      "CreateVm"             => p("cloudstack.timeout.create_vm"),
+      "DeleteVm"             => p("cloudstack.timeout.delete_vm"),
+      "StopVm"               => p("cloudstack.timeout.stop_vm"),
+      "CreateVolume"         => p("cloudstack.timeout.create_volume"),
+      "DeleteVolume"         => p("cloudstack.timeout.delete_volume"),
+      "ResizeVolume"         => p("cloudstack.timeout.resize_volume"),
+      "PollTemplate"         => p("cloudstack.timeout.poll_template"),
+      "DeleteSnapshotVolume" => p("cloudstack.timeout.delete_snapshot_volume"),
+      "SnapshotVolume"       => p("cloudstack.timeout.snapshot_volume"),
+      "AttachVolume"         => p("cloudstack.timeout.attach_volume"),
+      "DetachVolume"         => p("cloudstack.timeout.detach_volume"),
+    },
+    "CalculateCloudProp"  => {
+      "DiskTags"       => p("cloudstack.calculate.disk_tags", []),
+      "NotDiskTags"    => p("cloudstack.calculate.not_disk_tags", []),
+      "ServiceTags"    => p("cloudstack.calculate.compute_tags", []),
+      "NotServiceTags" => p("cloudstack.calculate.not_compute_tags", []),
     },
   },
   "Actions" => {
@@ -47,5 +58,4 @@ JSON.dump(
     },
   }
 )
-
 %>

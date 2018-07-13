@@ -7,6 +7,7 @@ packages:
 templates:
   config/config.json.erb: config/config.json
   bin/cpi.erb: bin/cpi
+  bin/cpi_ctl.erb: bin/cpi_ctl
 
 properties:
   cloudstack.endpoint:
@@ -22,6 +23,9 @@ properties:
   cloudstack.skip_verify_ssl:
       description: "Set true to skip SSL verification"
       default: false
+  cloudstack.expunge_vm:
+      description: "Set to true to expunge vm when deleting vm"
+      default: true
 
   cloudstack.timeout.global:
       description: "Default CPI timeout for all actions (seconds)"
@@ -48,8 +52,29 @@ properties:
       description: "CPI timeout for volume resizing (seconds)"
       default: 1800
   cloudstack.timeout.poll_template:
-      description: "CPI timeout used when waitting for cloudstack to install uploaded stemcell (seconds)"
+      description: "CPI timeout used when waiting for cloudstack to install uploaded stemcell (seconds)"
       default: 1800
+  cloudstack.timeout.snapshot_volume:
+      description: "CPI timeout for snapshot volume (seconds)"
+      default: 1800
+  cloudstack.timeout.delete_snapshot_volume:
+      description: "CPI timeout for deleting snapshot volume (seconds)"
+      default: 1800
+  cloudstack.timeout.attach_volume:
+      description: "CPI timeout for attaching volume (seconds)"
+      default: 36000
+  cloudstack.timeout.detach_volume:
+      description: "CPI timeout for attaching volume (seconds)"
+      default: 1800
+
+  cloudstack.calculate.disk_tags:
+      description: "Calculation cloud properties will be filtered with disk offerings which has one of those tags"
+  cloudstack.calculate.not_disk_tags:
+      description: "Calculation cloud properties will be filtering with disk offerings which doesn't have all this tags"
+  cloudstack.calculate.compute_tags:
+      description: "Calculation cloud properties will be filtering with compute offerings which has one of those tags"
+  cloudstack.calculate.not_compute_tags:
+      description: "Calculation cloud properties will be filtering with compute offerings which doesn't have all this tags"
 
   cloudstack.default_key_name:
       description: ""
