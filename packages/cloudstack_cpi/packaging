@@ -15,5 +15,6 @@ mkdir ../src && cp -a * ../src/ && mv ../src ./src
 
 mkdir $BOSH_INSTALL_TARGET/bin
 
-go build -o $BOSH_INSTALL_TARGET/bin/cloudstack_cpi src/bosh-cpi-cloudstack/main/main.go
+cd src/bosh-cpi-cloudstack/main
+go build -o $BOSH_INSTALL_TARGET/bin/cloudstack_cpi
 
