@@ -81,29 +81,38 @@ properties:
       description: "Use given OS type registered in Cloudstack"
       default: "Other PV (64-bit)"
 
-  action.agent.mbus:
+  ntp:
+      description: "List of NTP servers"
+      default: []
+
+  agent.mbus:
+    description: Message bus endpoint for the agent to start accepting agent requests
+    example: https://user:password@192.168.0.1:5000
+  agent.env_service:
       description: ""
       default: ""
-  action.agent.ntp:
-      description: ""
-  action.agent.env_service:
+  agent.blobstore.provider:
       description: ""
       default: ""
-  action.agent.blobstore.provider:
-      description: ""
-      default: ""
-  action.agent.blobstore.options:
+  agent.blobstore.options:
       description: ""
 
-  action.registry.host:
+  registry.host:
       description: "Hostname of registry"
       default: ""
-  action.registry.port:
+  registry.port:
       description: "Port of registry"
       default: 6901
-  action.registry.username:
+  registry.username:
       description: "Username for registry"
       default: ""
-  action.registry.password:
+  registry.password:
       description: "Password for registry"
       default: ""
+
+  env.http_proxy:
+    description: Http proxy to connect to cloud API's (not implemented yet)
+  env.https_proxy:
+    description: Https proxy to connect to cloud API's (not implemented yet)
+  env.no_proxy:
+    description: No proxy environment variable (not implemented yet)
