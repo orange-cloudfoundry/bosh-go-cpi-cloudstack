@@ -3,18 +3,18 @@
 set -e
 
 <% if_p('env.http_proxy') do |http_proxy| %>
-export HTTP_PROXY="<%= http_proxy %>"
-export http_proxy="<%= http_proxy %>"
+  export HTTP_PROXY="<%= http_proxy %>"
+  export http_proxy="<%= http_proxy %>"
 <% end %>
 
 <% if_p('env.https_proxy') do |https_proxy| %>
-export HTTPS_PROXY="<%= https_proxy %>"
-export https_proxy="<%= https_proxy %>"
+  export HTTPS_PROXY="<%= https_proxy %>"
+  export https_proxy="<%= https_proxy %>"
 <% end %>
 
 <% if_p('env.no_proxy') do |no_proxy| %>
-export NO_PROXY="<%= no_proxy %>"
-export no_proxy="<%= no_proxy %>"
+  export NO_PROXY="<%= no_proxy %>"
+  export no_proxy="<%= no_proxy %>"
 <% end %>
 
 BOSH_PACKAGES_DIR=${BOSH_PACKAGES_DIR:-/var/vcap/packages}
@@ -24,9 +24,9 @@ PATH=$BOSH_PACKAGES_DIR/cloudstack_cpi/bin:$PATH
 export PATH
 
 
-cmd="$BOSH_PACKAGES_DIR/cloudstack_cpi/bin/openstack_cpi -configPath $BOSH_JOBS_DIR/cloudstack_cpi/config/config.json"
+cmd="$BOSH_PACKAGES_DIR/cloudstack_cpi/bin/cloudstack_cpi -configPath $BOSH_JOBS_DIR/cloudstack_cpi/config/config.json"
 if [ -d /var/vcap/sys/log ]; then
-    exec $cmd 2>>/var/vcap/sys/log/cloudstack_cpi/cpi.stderr.log <&0
+exec $cmd 2>>/var/vcap/sys/log/cloudstack_cpi/cpi.stderr.log <&0
 else
-  exec $cmd <&0
+exec $cmd <&0
 fi

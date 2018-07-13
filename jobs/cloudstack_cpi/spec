@@ -5,7 +5,7 @@ packages:
   - cloudstack_cpi
 
 templates:
-  config/config.json.erb: config/config.yml
+  config/config.json.erb: config/config.json
   bin/cpi.erb: bin/cpi
 
 properties:
