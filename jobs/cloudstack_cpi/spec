@@ -5,11 +5,8 @@ packages:
   - cloudstack_cpi
 
 templates:
-  bin/ctl: bin/ctl
-  bin/monit_debugger: bin/monit_debugger
   config/config.json.erb: config/config.yml
-  helpers/ctl_setup.sh: helpers/ctl_setup.sh
-  helpers/ctl_utils.sh: helpers/ctl_utils.sh
+  bin/cpi.erb: bin/cpi
 
 properties:
   cloudstack.endpoint:

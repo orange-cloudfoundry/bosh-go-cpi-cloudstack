@@ -1,5 +1,0 @@
-check process cloudstack_cpi
-  with pidfile /var/vcap/sys/run/cloudstack_cpi/cloudstack_cpi.pid
-  start program "/var/vcap/jobs/cloudstack_cpi/bin/monit_debugger cloudstack_cpi_ctl '/var/vcap/jobs/cloudstack_cpi/bin/ctl start'"
-  stop program "/var/vcap/jobs/cloudstack_cpi/bin/monit_debugger cloudstack_cpi_ctl '/var/vcap/jobs/cloudstack_cpi/bin/ctl stop'"
-  group vcap

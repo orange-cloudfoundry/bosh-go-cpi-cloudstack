@@ -1,0 +1,31 @@
+name: bosh-go-cpi-cloudstack
+version: "1.2"
+commit_hash: c91f7a2
+uncommitted_changes: true
+jobs:
+- name: cloudstack_cpi
+  version: c292eeac0448200832b1469447ff8d45701031d2
+  fingerprint: c292eeac0448200832b1469447ff8d45701031d2
+  sha1: 59c96a417bbc242794d26b63f440238f112f8e47
+packages:
+- name: cloudstack_cpi
+  version: 3cdd014cdaf66b0b31bdb478bc4e21fa3ab5368a
+  fingerprint: 3cdd014cdaf66b0b31bdb478bc4e21fa3ab5368a
+  sha1: 64d9d82c0050dd9835e527eae37a56feb03cad65
+  dependencies:
+  - golang-1.10-linux
+  - golang-1.10-darwin
+- name: golang-1.10-darwin
+  version: 7ec37d651e14455053520132eafacfa5d11d47e4
+  fingerprint: 7ec37d651e14455053520132eafacfa5d11d47e4
+  sha1: 984722e8906a69f04584b62167f8363c73567481
+  dependencies: []
+- name: golang-1.10-linux
+  version: 84480dd6f6ab2d61546f28c05ed2705c9c642607
+  fingerprint: 84480dd6f6ab2d61546f28c05ed2705c9c642607
+  sha1: 491bd2416037957858a1e0450193f116285a6be7
+  dependencies: []
+license:
+  version: a55c21d82ab2b2e61c5d39ae914c7fb10e529192
+  fingerprint: a55c21d82ab2b2e61c5d39ae914c7fb10e529192
+  sha1: 93d9856a82a2d2e7dbea4e2a3b7e9a65ee21a1eb
