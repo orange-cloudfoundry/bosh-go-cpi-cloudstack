@@ -38,6 +38,9 @@ properties:
   cloudstack.timeout.delete_vm:
       description: "CPI timeout for virtual machine deletion (seconds)"
       default: 1800
+  cloudstack.timeout.stop_vm:
+      description: "CPI timeout for virtual machine stop (seconds)"
+      default: 1800
   cloudstack.timeout.create_volume:
       description: "CPI timeout for volume creation (seconds)"
       default: 1800
