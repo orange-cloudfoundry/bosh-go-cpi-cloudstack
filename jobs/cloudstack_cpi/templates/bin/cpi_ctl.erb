@@ -1,8 +1,13 @@
 #!/bin/bash
 
+set -e
+
+source /var/vcap/jobs/cloudstack_cpi/helpers/ctl_setup.sh 'cloudstack_cpi'
+
 LOG_DIR=/var/vcap/sys/log/cloudstack_cpi
 RUN_DIR=/var/vcap/sys/run/cloudstack_cpi
-PIDFILE=$RUN_DIR/cpi.pid
+BOSH_PACKAGES_DIR=${BOSH_PACKAGES_DIR:-/var/vcap/packages}
+BOSH_JOBS_DIR=${BOSH_JOBS_DIR:-/var/vcap/jobs}
 
 case $1 in
 
@@ -14,12 +19,26 @@ chown -R vcap:vcap $RUN_DIR
 mkdir -p $LOG_DIR
 chown -R vcap:vcap $LOG_DIR
 
-echo 1 > $PIDFILE
+<% if p('cloudstack.clean_disk') and not p('director.name').empty? %>
+  pid_guard $PIDFILE $JOB_NAME
+
+  # store pid in $PIDFILE
+  echo $$ > $PIDFILE
+
+  exec chpst -u vcap:vcap $BOSH_PACKAGES_DIR/cloudstack_cpi/bin/cloudstack_cpi -cleaning \
+  -configPath $BOSH_JOBS_DIR/cloudstack_cpi/config/config.json \
+  >>$LOG_DIR/clean_disk.log 2>&1
+<% else %>
+  echo 1 > $PIDFILE
+<% end %>
 ;;
 
 stop)
-rm -f $PIDFILE
-
+<% if p('cloudstack.clean_disk') and not p('director.name').empty? %>
+  kill_and_wait $PIDFILE
+<% else %>
+  rm -f $PIDFILE
+<% end %>
 ;;
 
 *)

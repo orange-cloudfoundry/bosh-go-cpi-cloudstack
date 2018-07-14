@@ -8,6 +8,8 @@ templates:
   config/config.json.erb: config/config.json
   bin/cpi.erb: bin/cpi
   bin/cpi_ctl.erb: bin/cpi_ctl
+  helpers/ctl_setup.sh: helpers/ctl_setup.sh
+  helpers/ctl_utils.sh: helpers/ctl_utils.sh
 
 properties:
   cloudstack.endpoint:
@@ -66,6 +68,16 @@ properties:
   cloudstack.timeout.detach_volume:
       description: "CPI timeout for attaching volume (seconds)"
       default: 1800
+
+  director.name:
+      description: "Set the director name to find disk to clean when use periodic cleaning ephemeral disks"
+      default: ""
+  cloudstack.clean_disk:
+      description: "Set to false to disable automatic cleaning non attached ephemeral disks"
+      default: true
+  cloudstack.interval_clean_disk:
+      description: "Set interval between 2 disk ephemeral cleaning (hours)"
+      default: 1
 
   cloudstack.calculate.disk_tags:
       description: "Calculation cloud properties will be filtered with disk offerings which has one of those tags"

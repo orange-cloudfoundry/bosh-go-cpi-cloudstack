@@ -1,5 +1,5 @@
 check process cloudstack_cpi
-  with pidfile /var/vcap/sys/run/cloudstack_cpi/cpi.pid
+  with pidfile /var/vcap/sys/run/cloudstack_cpi/cloudstack_cpi.pid
   start program "/var/vcap/jobs/cloudstack_cpi/bin/cpi_ctl start"
   stop program "/var/vcap/jobs/cloudstack_cpi/bin/cpi_ctl stop"
 group vcap
