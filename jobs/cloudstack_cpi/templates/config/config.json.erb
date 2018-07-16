@@ -2,14 +2,15 @@
 
 JSON.dump(
   "CloudStack" => {
-    "Endpoint"           => p("cloudstack.endpoint"),
-    "ApiKey"             => p("cloudstack.api_key"),
-    "SecretAccessKey"    => p("cloudstack.secret_access_key"),
-    "SkipVerifySSL"      => p("cloudstack.skip_verify_ssl"),
-    "DefaultZone"        => p("cloudstack.default_zone"),
-    "ExpungeVm"          => p("cloudstack.expunge_vm"),
-    "DirectorName"       => p("director.name"),
-    "IntervalCleanDisk"  => p("cloudstack.interval_clean_disk"),
+    "Endpoint"                => p("cloudstack.endpoint"),
+    "ApiKey"                  => p("cloudstack.api_key"),
+    "SecretAccessKey"         => p("cloudstack.secret_access_key"),
+    "SkipVerifySSL"           => p("cloudstack.skip_verify_ssl"),
+    "DefaultZone"             => p("cloudstack.default_zone"),
+    "ExpungeVm"               => p("cloudstack.expunge_vm"),
+    "DirectorName"            => p("director.name"),
+    "IntervalCleanDisk"       => p("cloudstack.interval_clean_disk"),
+    "EnableAutoAntiAffinity"  => p("cloudstack.enable_auto_anti_affinity"),
     "DefaultOffer"    => {
        "Disk"            => p("cloudstack.default_offer.disk"),
        "EphemeralDisk"   => p("cloudstack.default_offer.ephemeral_disk"),

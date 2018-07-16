@@ -88,6 +88,10 @@ properties:
   cloudstack.calculate.not_compute_tags:
       description: "Calculation cloud properties will be filtering with compute offerings which doesn't have all this tags"
 
+  cloudstack.enable_auto_anti_affinity:
+    description: Configures soft anti-affinity. For each instance group an CloudStack server group with a soft-anti-affinity policy is created. If anti-affinity can not be achieved (more than one VM is placed on a single hypervisor) the deployment will not fail and no warning will be shown.
+    default: false
+
   cloudstack.default_key_name:
       description: ""
       default: ""
