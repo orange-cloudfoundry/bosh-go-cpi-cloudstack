@@ -79,6 +79,10 @@ properties:
       description: "Set interval between 2 disk ephemeral cleaning (hours)"
       default: 1
 
+  cloudstack.data_disk_offering:
+      description: "Set disk offering for data disk when creating vm (only useful for bosh create-env)"
+      default: ""
+
   cloudstack.calculate.disk_tags:
       description: "Calculation cloud properties will be filtered with disk offerings which has one of those tags"
   cloudstack.calculate.not_disk_tags:
