@@ -79,10 +79,6 @@ properties:
       description: "Set interval between 2 disk ephemeral cleaning (hours)"
       default: 1
 
-  cloudstack.root_disk_size:
-      description: "Set root disk size in mb for root disk when creating vm (only useful for bosh create-env)"
-      default: 0
-
   cloudstack.calculate.disk_tags:
       description: "Calculation cloud properties will be filtered with disk offerings which has one of those tags"
   cloudstack.calculate.not_disk_tags:
