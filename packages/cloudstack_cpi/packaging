@@ -13,7 +13,7 @@ source ${pkg_dir}/bosh/compile.env
 
 mkdir -p ../src/github.com/orange-cloudfoundry && cp -a * ../src/github.com/orange-cloudfoundry && mv ../src ./src
 
-mkdir $BOSH_INSTALL_TARGET/bin
+mkdir -p $BOSH_INSTALL_TARGET/bin
 
 go build -o $BOSH_INSTALL_TARGET/bin/cloudstack_cpi src/github.com/orange-cloudfoundry/bosh-cpi-cloudstack/main/*.go
 
