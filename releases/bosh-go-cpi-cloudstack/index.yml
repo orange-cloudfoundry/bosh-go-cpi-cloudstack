@@ -37,6 +37,8 @@ builds:
     version: "1.17"
   c8151cf9-4fdf-4221-7484-319973b43aa9:
     version: "1.12"
+  cd6caf4a-c0d2-4089-7a9e-f6ba48e9d805:
+    version: "1.23"
   f1302484-09c8-4a42-4c09-a8a544e6c173:
     version: "1.21"
 format-version: "2"
