@@ -13,6 +13,10 @@ PACKAGE_NAME="github.com/orange-cloudfoundry/bosh-cpi-cloudstack"
 
 source ${pkg_dir}/bosh/compile.env
 
+if [ ! -d "${GOCACHE}" ]; then
+    unset GOCACHE
+fi
+
 mkdir -p ${GOPATH}/src/${PACKAGE_NAME}
 mkdir -p ${BOSH_INSTALL_TARGET}/bin
 
