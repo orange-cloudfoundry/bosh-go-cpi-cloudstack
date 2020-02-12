@@ -2,8 +2,8 @@
 name: cloudstack_cpi
 
 dependencies:
-- golang-1.10-linux
-- golang-1.10-darwin
+- golang-1.12-linux
+- golang-1.12-darwin
 
 files:
 - "**/*.go"
