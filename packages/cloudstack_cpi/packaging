@@ -13,6 +13,11 @@ PACKAGE_NAME="github.com/orange-cloudfoundry/bosh-cpi-cloudstack"
 
 source ${pkg_dir}/bosh/compile.env
 
+# hack to compile from bbl
+if [ ! -d "${GOCACHE}" ]; then
+    export GOCACHE=/tmp/
+fi
+
 mkdir -p ${GOPATH}/src/${PACKAGE_NAME}
 mkdir -p ${BOSH_INSTALL_TARGET}/bin
 
