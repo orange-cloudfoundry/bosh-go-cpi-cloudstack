@@ -91,6 +91,9 @@ properties:
   cloudstack.enable_auto_anti_affinity:
     description: Configures soft anti-affinity. For each instance group an CloudStack server group with a soft-anti-affinity policy is created. If anti-affinity can not be achieved (more than one VM is placed on a single hypervisor) the deployment will not fail and no warning will be shown.
     default: false
+  cloudstack.auto_anti_affinity_type:
+    description: set affinity type to use when using auto anti affinity
+    default: "host anti-affinity"
 
   cloudstack.default_key_name:
       description: ""
