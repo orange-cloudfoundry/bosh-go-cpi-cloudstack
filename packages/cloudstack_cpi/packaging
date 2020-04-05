@@ -4,9 +4,9 @@
 ostype=$(uname  | tr '[:upper:]' '[:lower:]')
 
 if [ -z "$BOSH_PACKAGES_DIR" ]; then
-    pkg_dir=$(readlink -nf /var/vcap/packages/golang-1.12-${ostype})
+    pkg_dir=$(readlink -nf /var/vcap/packages/golang-1-${ostype})
 else
-  pkg_dir=$BOSH_PACKAGES_DIR/golang-1.12-${ostype}
+  pkg_dir=$BOSH_PACKAGES_DIR/golang-1-${ostype}
 fi
 
 PACKAGE_NAME="github.com/orange-cloudfoundry/bosh-cpi-cloudstack"
