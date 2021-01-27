@@ -1,9 +1,8 @@
 ---
 name: cloudstack_cpi
 
-dependencies:
-- golang-1-linux
-- golang-1-darwin
+dependencies: []
 
 files:
-- "**/*.go"
+- bosh-cpi-cloudstack_darwin.tar.gz
+- bosh-cpi-cloudstack_linux.tar.gz

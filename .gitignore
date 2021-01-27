@@ -1,4 +1,7 @@
-config/private.yml
-.dev_builds
-dev_releases
-*.tgz
+/config/private.yml
+/.dev_builds
+/dev_releases
+/*.tgz
+/*.gz
+/blobs
+/.blobs

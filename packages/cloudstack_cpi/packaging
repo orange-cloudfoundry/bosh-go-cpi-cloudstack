@@ -1,31 +1,6 @@
 #!/bin/bash -eu
 
-
 ostype=$(uname  | tr '[:upper:]' '[:lower:]')
 
-if [ -z "$BOSH_PACKAGES_DIR" ]; then
-    pkg_dir=$(readlink -nf /var/vcap/packages/golang-1-${ostype})
-else
-  pkg_dir=$BOSH_PACKAGES_DIR/golang-1-${ostype}
-fi
-
-PACKAGE_NAME="github.com/orange-cloudfoundry/bosh-cpi-cloudstack"
-
-source ${pkg_dir}/bosh/compile.env
-
-# hack to compile from bbl
-if [ ! -d "${GOCACHE}" ]; then
-    export GOCACHE=/tmp/
-fi
-
-mkdir -p ${GOPATH}/src/${PACKAGE_NAME}
 mkdir -p ${BOSH_INSTALL_TARGET}/bin
-
-cp -r bosh-cpi-cloudstack/* ${GOPATH}/src/${PACKAGE_NAME}
-
-cd ${GOPATH}/src/${PACKAGE_NAME}
-export CGO_ENABLED=0
-go build \
-   -a -ldflags "-s -w" \
-   -o ${BOSH_INSTALL_TARGET}/bin/cloudstack_cpi \
-   ${PACKAGE_NAME}/main
+tar zxf bosh-cpi-cloudstack_${ostype}.tar.gz --strip 1 -C ${BOSH_INSTALL_TARGET}/bin
