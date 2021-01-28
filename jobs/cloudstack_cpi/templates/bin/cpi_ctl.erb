@@ -25,9 +25,10 @@ chown -R vcap:vcap $LOG_DIR
   # store pid in $PIDFILE
   echo $$ > $PIDFILE
 
-  exec chpst -u vcap:vcap $BOSH_PACKAGES_DIR/cloudstack_cpi/bin/cloudstack_cpi -cleaning \
-  -configPath $BOSH_JOBS_DIR/cloudstack_cpi/config/config.json \
-  >>$LOG_DIR/clean_disk.log 2>&1
+  exec chpst -u vcap:vcap $BOSH_PACKAGES_DIR/cloudstack_cpi/bin/cloudstack_cpi \
+       --cleaning \
+       --configPath $BOSH_JOBS_DIR/cloudstack_cpi/config/config.json \
+       >>$LOG_DIR/clean_disk.log 2>&1
 <% else %>
   echo 1 > $PIDFILE
 <% end %>
