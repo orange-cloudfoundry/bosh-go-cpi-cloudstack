@@ -4,3 +4,4 @@ ostype=$(uname  | tr '[:upper:]' '[:lower:]')
 
 mkdir -p ${BOSH_INSTALL_TARGET}/bin
 tar zxf bosh-cpi-cloudstack_${ostype}.tar.gz --strip 1 -C ${BOSH_INSTALL_TARGET}/bin
+mv ${BOSH_INSTALL_TARGET}/bin/bosh-cpi-cloudstack ${BOSH_INSTALL_TARGET}/bin/cloudstack_cpi
