@@ -65,6 +65,8 @@ builds:
     version: 2.0.13
   f1302484-09c8-4a42-4c09-a8a544e6c173:
     version: "1.21"
+  f45f6ceb-52c4-4efc-5f6f-bf8750e862ed:
+    version: 2.0.15
   fc3c818c-973c-46a7-7099-947c9fd24660:
     version: 2.0.0
 format-version: "2"
