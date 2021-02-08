@@ -73,4 +73,6 @@ builds:
     version: 2.0.15
   fc3c818c-973c-46a7-7099-947c9fd24660:
     version: 2.0.0
+  fd144205-6646-45cf-5d68-d6dcc1860aa9:
+    version: 2.0.18
 format-version: "2"
