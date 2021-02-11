@@ -17,6 +17,8 @@ builds:
     version: 2.0.12
   41ea5cac-ef06-4f5d-45fe-119243b64ceb:
     version: "1.16"
+  4674d234-c22c-4cdd-58fc-bc5f234eb57c:
+    version: 2.0.19
   4688bcdd-d041-4fce-6a27-22f6c11e0442:
     version: "1.11"
   4b6d4cbd-28f4-42a0-4175-9c87af06aef7:
