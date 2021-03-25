@@ -1,6 +1,8 @@
 builds:
   05efde4b-fefb-41f5-7fc8-3a23bfbf151a:
     version: "1.10"
+  0b2da994-4b9c-4559-4979-661eeef8eb04:
+    version: 2.0.20
   0ca89412-8173-4320-5be1-20c0e8e0f25e:
     version: "1.20"
   226c0722-c46f-439f-7330-06fa53cffa4e:
