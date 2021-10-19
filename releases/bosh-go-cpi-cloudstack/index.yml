@@ -81,6 +81,8 @@ builds:
     version: "1.14"
   c47b7812-7016-411e-758c-a3f64ad5ade9:
     version: "1.17"
+  c4e5c8b5-6de5-4259-5a54-cb4474c02133:
+    version: 2.2.5
   c8151cf9-4fdf-4221-7484-319973b43aa9:
     version: "1.12"
   cd6caf4a-c0d2-4089-7a9e-f6ba48e9d805:
