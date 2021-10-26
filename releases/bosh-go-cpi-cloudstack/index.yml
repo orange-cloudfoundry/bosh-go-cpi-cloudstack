@@ -7,6 +7,8 @@ builds:
     version: 2.0.20
   0ca89412-8173-4320-5be1-20c0e8e0f25e:
     version: "1.20"
+  1679d78f-6c0b-4d08-5479-0a3d14e13ac0:
+    version: v2.3.1-rc1
   1e62ae0d-8db5-4938-5d95-577ab0b55d94:
     version: 2.2.6
   226c0722-c46f-439f-7330-06fa53cffa4e:
