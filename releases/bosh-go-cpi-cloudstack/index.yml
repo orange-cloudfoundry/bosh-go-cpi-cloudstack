@@ -1,6 +1,8 @@
 builds:
   03382007-0250-42a6-41d1-5ad9ea5b4dfd:
     version: 2.0.21
+  035dda26-f613-4b21-6dfb-05dc93d5129d:
+    version: 2.4.2
   05efde4b-fefb-41f5-7fc8-3a23bfbf151a:
     version: "1.10"
   0b2da994-4b9c-4559-4979-661eeef8eb04:
