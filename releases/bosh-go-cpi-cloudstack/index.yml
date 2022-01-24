@@ -79,6 +79,8 @@ builds:
     version: 2.1.2
   9010b55c-349e-4868-5b85-63d661dd9464:
     version: "1.19"
+  917c0cf5-6d52-486b-63c7-dbe4d4b60b83:
+    version: 2.5.0
   92854e60-ea56-4076-61e0-84933f736cf7:
     version: 2.2.0
   96c7ec61-76fe-4c98-6986-b6b53b88b2eb:
