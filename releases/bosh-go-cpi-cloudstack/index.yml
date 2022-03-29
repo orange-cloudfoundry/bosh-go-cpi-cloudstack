@@ -11,6 +11,8 @@ builds:
     version: "1.20"
   0fec490c-be86-4804-799a-450dc4520308:
     version: 2.5.9
+  1192c179-4387-4e7f-641f-2e1098125bfb:
+    version: 2.6.0
   1a7c5b90-b25d-41f5-4e8d-a093a1843d36:
     version: 2.5.1
   1e1b6807-1425-41b4-79d3-b26611d3b0bc:
