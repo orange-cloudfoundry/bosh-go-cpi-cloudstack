@@ -65,6 +65,8 @@ builds:
     version: "1.27"
   4e100a0a-d4dd-4c0f-76cd-cbfffd62ea91:
     version: "1.22"
+  564a7f1b-8e6f-46a3-4a35-9d39f20a8e9d:
+    version: 2.8.1
   577fb403-31d2-473d-40aa-669eae687fd5:
     version: 2.5.5
   612a7f11-f450-4316-56fe-0c49dce24fc1:
