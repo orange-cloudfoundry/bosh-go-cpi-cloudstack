@@ -11,6 +11,8 @@ builds:
     version: 2.8.3
   0ca89412-8173-4320-5be1-20c0e8e0f25e:
     version: "1.20"
+  0ccc4d83-f7f4-47be-6df2-3f689addfdb9:
+    version: 2.12.1
   0fec490c-be86-4804-799a-450dc4520308:
     version: 2.5.9
   1192c179-4387-4e7f-641f-2e1098125bfb:
