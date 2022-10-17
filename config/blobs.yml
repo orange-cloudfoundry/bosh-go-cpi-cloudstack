@@ -1,8 +1,8 @@
 bosh-cpi-cloudstack_darwin.tar.gz:
-  size: 5105743
-  object_id: 93699333-ba37-4a89-7a75-44ee91ad56ab
-  sha: sha256:dffae644a2e7f2ecfbe02fbbc0adb5608bca063027a9f34bde7470b7631c496d
+  size: 5105734
+  object_id: 1e51a977-6157-4137-785b-02f6d6fb02b7
+  sha: sha256:c1b1add2124d11fc12d854582d67b2f1b3fcbde3069704bcb8b375e7b54885cf
 bosh-cpi-cloudstack_linux.tar.gz:
-  size: 4873812
-  object_id: 431c78b0-e299-43b8-7bfe-052b934283f8
-  sha: sha256:d111ccecd0b022720c6e0a378212b367bf845b1ff721815e20728863bbc9c8d8
+  size: 4873803
+  object_id: ecb9e7e2-10f2-4812-7686-0f952e472a37
+  sha: sha256:20434910ecae215e704addebea9757a161bb5941af49f86b4e5ab1c1c75bc9bc
