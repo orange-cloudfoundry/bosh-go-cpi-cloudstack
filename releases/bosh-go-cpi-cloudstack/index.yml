@@ -107,6 +107,8 @@ builds:
     version: 2.5.5
   57e11743-44f4-4ac7-55db-22828e8fa689:
     version: 2.13.1
+  5c517dfd-817a-45a7-529c-a96f9bc91981:
+    version: 2.17.1
   612a7f11-f450-4316-56fe-0c49dce24fc1:
     version: "1.18"
   61650403-4d62-4ad9-4312-88233da71ac5:
