@@ -83,6 +83,8 @@ builds:
     version: "1.25"
   36db8e99-0708-49bf-7158-638c7cae885d:
     version: 2.7.1
+  36fa88ea-afce-4dbf-7ce8-b38c192a3be6:
+    version: 2.30.0
   373948ca-665d-494c-590d-aef358e7860c:
     version: 2.17.0
   3b5ce83f-f863-4c9d-7e2c-2e57c842f269:
