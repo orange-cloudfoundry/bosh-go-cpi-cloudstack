@@ -337,6 +337,8 @@ builds:
     version: 2.24.4
   db051f62-b79b-4c90-6701-630e2dd858f1:
     version: "1.26"
+  db6d01e9-c72f-4469-4b4f-13fff8a4fa34:
+    version: 2.34.1
   dc77621f-ee16-481e-7bcb-227ee7011ee5:
     version: 2.4.3
   ddbcf114-0702-46ca-51c7-75079634102a:
