@@ -245,6 +245,8 @@ builds:
     version: 2.4.8
   8ba056df-2bec-4135-6091-bd80d2cdeb13:
     version: 2.32.21
+  8ba7524a-227b-4df4-5ad8-ec7bdfa43aeb:
+    version: 2.40.0
   8baff6e4-95f7-4c9f-631c-854a1046133b:
     version: 2.32.15
   8bb78ada-654f-4c14-57bd-370f5fee9cc2:
