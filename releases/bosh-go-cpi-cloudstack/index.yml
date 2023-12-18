@@ -235,6 +235,8 @@ builds:
     version: "1.5"
   895acfa2-0683-426a-7f9c-ad23014eddfb:
     version: 2.33.1
+  89ddca66-2aeb-4441-45a6-0c17a4f30731:
+    version: 2.40.4
   89f985c8-58bd-434d-517a-2539f485ad3d:
     version: 2.18.4
   8a181d34-5f1e-4577-5df7-4980d075e966:
