@@ -41,6 +41,8 @@ builds:
     version: 2.13.12
   18be4278-a169-4e43-6e20-1a8cd5e0eead:
     version: 2.26.1
+  1924a3d5-4590-437b-646a-73afbd39e2e2:
+    version: 2.51.0
   19363815-54cb-4cbf-7cb8-2c1f70598ace:
     version: 2.10.2
   195786b6-0521-46e0-49b3-39638bd54bff:
