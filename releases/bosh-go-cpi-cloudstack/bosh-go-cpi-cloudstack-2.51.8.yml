@@ -1,0 +1,21 @@
+name: bosh-go-cpi-cloudstack
+version: 2.51.8
+commit_hash: 90714ac
+uncommitted_changes: false
+jobs:
+- name: cloudstack_cpi
+  version: 6de5eedcd58e6880b206329e77cb69514659c1e8d689aedb8068962bf05485f4
+  fingerprint: 6de5eedcd58e6880b206329e77cb69514659c1e8d689aedb8068962bf05485f4
+  sha1: sha256:e35069ed17f467a6fda997baef457cf175a11288f07831ac6d00f8d0c394409d
+  packages:
+  - cloudstack_cpi
+packages:
+- name: cloudstack_cpi
+  version: 02c834a7ce8e16f8b1648784039311ee6218403442e878de2a04b8850b561af1
+  fingerprint: 02c834a7ce8e16f8b1648784039311ee6218403442e878de2a04b8850b561af1
+  sha1: sha256:cd1d60106d9db5f037b57995a7728055151a03b257a0b73645fc6b3e3858971b
+  dependencies: []
+license:
+  version: ceb0a47fcab43a6fa2dc26c57f145448d28ad2eb74155cad1c6e460e9284c4ff
+  fingerprint: ceb0a47fcab43a6fa2dc26c57f145448d28ad2eb74155cad1c6e460e9284c4ff
+  sha1: sha256:3a148e633975d22fd285060519bf1866a20c89fbe1df5882f0f311fa834790d2
