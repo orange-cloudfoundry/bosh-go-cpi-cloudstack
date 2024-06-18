@@ -7,6 +7,8 @@ builds:
     version: 2.4.2
   05efde4b-fefb-41f5-7fc8-3a23bfbf151a:
     version: "1.10"
+  0672f1d3-fa46-4e49-42b0-238953825691:
+    version: 2.52.3
   06ab4ce9-1690-4a5c-41a5-d8531b2afbc5:
     version: 2.28.3
   0a78e001-0ffd-4992-7b05-05477c53fc7b:
