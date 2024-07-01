@@ -393,6 +393,8 @@ builds:
     version: 2.32.19
   b437bc0f-a100-48c0-7d26-29107e13e449:
     version: 2.32.7
+  b4de55d3-9ce8-48d2-7b07-0f3b1fd562ba:
+    version: 2.53.1
   b7827147-3aaa-4eab-7123-259dc787d651:
     version: 2.28.5
   b8106818-fb02-4f06-6677-3338bc158e28:
