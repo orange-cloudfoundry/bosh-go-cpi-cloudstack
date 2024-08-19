@@ -431,6 +431,8 @@ builds:
     version: "1.17"
   c4e5c8b5-6de5-4259-5a54-cb4474c02133:
     version: 2.2.5
+  c502052d-1564-4be6-6448-3961eeeab18b:
+    version: 2.55.6
   c8151cf9-4fdf-4221-7484-319973b43aa9:
     version: "1.12"
   c81932d1-4a5d-4754-4be6-2d3bd0fef26b:
