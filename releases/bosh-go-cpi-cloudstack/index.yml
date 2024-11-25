@@ -165,6 +165,8 @@ builds:
     version: 2.4.4
   40d36f49-94cb-48ad-786e-4e507cd9ce73:
     version: 2.0.12
+  41c1d924-9699-405a-5f88-7a06c3f22443:
+    version: 2.61.4
   41ea5cac-ef06-4f5d-45fe-119243b64ceb:
     version: "1.16"
   41efd294-722d-4269-7197-ccac3e8064e0:
